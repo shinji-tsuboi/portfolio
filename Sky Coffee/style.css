@@ -1,0 +1,316 @@
+
+/* PC.SP共通スタイル */
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic ProN";
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* PC用スタイル */
+@media (min-width: 768px) {
+
+  .main-sp {
+    display: none;
+  }
+  /* ヘッダー */
+  .logo {
+    margin: 50px auto 45px auto;
+    text-align: center;
+    width: 280px;
+    font-size: 0;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* メインビジュアル */
+  .main-pic {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ナビゲーションスタイル */
+
+  .menu {
+    font-size: 18px;
+    color: #333333;
+    margin: 45px 0 90px 0;
+    text-align: center;
+  }
+
+  .menu-center {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  /* コンセプト */
+
+  #consept {
+    display: flex;
+    gap: 40px;
+  }
+
+  #consept div {
+    flex: 1;
+  }
+
+  .consept-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .concept-pic {
+    width: 555px;
+    height: 547px;
+    margin-left: 165px;
+  }
+
+  .concept-header {
+    margin-top: 160px;
+  }
+
+  .concept-title {
+    font-size: 32px;
+    color: #24abbf;
+    margin: 20px 0 30px 0;
+  }
+
+  #concept p {
+    color: #333333;
+    font-size: 16px;
+  }
+
+  /* ブログ */
+
+  #blog-header {
+    font-size: 32px;
+    color: #24abbf;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .blog-ja {
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    margin-top: 11px;
+  }
+
+  .blog {
+    margin: 30px auto;
+    justify-content: center;
+  }
+
+  .blog ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .blog li {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .blog h3 {
+    font-size: 15px;
+    margin: 12px 0 6px 0;
+    color: #333333;
+  }
+
+  .blog p {
+    font-size: 12px;
+    color: #333333;
+  }
+
+  .button {
+    font-size: 15px;
+    color: #24abbf;
+    padding: 18px 72px;
+    border: 1px solid #24abbf;
+    text-decoration: none;
+  }
+
+  #button {
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+
+  footer {
+    background: #000;
+  }
+
+  .footer-logo {
+    width: 180px;
+    margin: 70px 0 50px 0;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
+  footer p {
+    color: #8b8b8b;
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+/* ヘッダー */
+  .logo {
+    width: 160px;
+    margin: 30px auto;
+  }
+
+  /* メインビジュアル */
+  .main-pc {
+    display: none;
+  }
+
+  .main-sp {
+    width: 375px;
+    height: 340px;
+  }
+
+  #main-pic {
+    text-align: center;
+  }
+
+  /* ナビゲーションスタイル */
+
+  .menu {
+    font-size: 16px;
+    color: #333333;
+    margin: 30px 0 58px 0;
+    text-align: center;
+  }
+
+  .menu-center {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* コンセプト */
+
+  .concept-pic {
+    width: 335px;
+    height: 339px;
+  }
+
+  .concept {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  .concept-img {
+    text-align: center;;
+  }
+
+
+  .concept-header {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  .concept-title {
+    font-size: 26px;
+    color: #24abbf;
+    margin: 16px 0 19px 0;
+  }
+
+  #concept p {
+    color: #333333;
+    font-size: 15px;
+  }
+
+  /* ブログ */
+
+  #blog-header {
+    font-size: 30px;
+    color: #24abbf;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 47px;
+  }
+
+  .blog-ja {
+    display: none;
+  }
+
+  .blog {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  .blog img {
+    width: 335px;
+    height: 172px;
+  }
+
+  .blog ul {
+    list-style: none;
+  }
+
+  .blog li {
+    margin-bottom: 42px;
+  }
+
+  .blog h3 {
+    font-size: 15px;
+    margin-top: 12px;
+    color: #333333;
+  }
+
+  .blog p {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+
+  .button {
+    font-size: 14px;
+    color: #24abbf;
+    padding: 18px 133px;
+    border: 1px solid #24abbf;
+    text-decoration: none;
+  }
+
+  #button {
+    text-align: center;
+    margin: 60px 0 50px 0;
+  }
+
+  /* フッター */
+  footer {
+    background: #000;
+    width: 375px;
+    height: 162px;
+    margin: 0 auto;
+  }
+
+  footer div {
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 100px;
+    margin-top: 60px;
+  }
+
+  footer p {
+    color: #8b8b8b;
+    font-size: 10px;
+    padding: 40px 0 20px 0;
+  }
+
+}
