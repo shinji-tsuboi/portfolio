@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+/* PC,SP共通スタイル */
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN" "Arial";
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* PC用スタイル */
+
+@media (min-width: 601px) {
+
+  /* ヘッダー */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+    height: 270px;
+    align-items: center;
+    padding: 0 4%;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    font-size: 14.4px;
+    color: #24292e;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  header li:hover {
+    opacity: 0.7;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #24292e;
+  }
+
+  .insta {
+    width: 20px;
+  }
+
+  /* メイン */
+
+  .sp-pic {
+    display: none;
+  }
+
+  #main-visual img {
+    height: 420px;
+    object-fit: cover;
+  }
+
+  /* About */
+
+  #about {
+    padding: 0 4%;
+    max-width: 960px;
+    margin: 80px auto 130px auto;
+  }
+
+  #about h2 {
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 24px;
+    color: #24292e;
+  }
+
+  #about ul {
+    list-style: none;
+  }
+
+  #about li {
+    font-size: 14.4px;
+    color: #24292e;
+  }
+
+  #about .name {
+    margin-bottom: 30px;
+  }
+
+  #about p {
+    font-size: 14.4px;
+    color: #24292e;
+    margin-top: 30px;
+  }
+
+  /* Works */
+
+  #works {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  #works h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  #works ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  #works li {
+    width: calc((100% / 3) - 24px);
+    padding-bottom: 23px;
+    margin: 0 auto;
+  }
+
+  /* News */
+
+  #news {
+    max-width: 960px;
+    margin: 150px auto 130px auto;
+    padding: 0 4%;
+  }
+
+  #news h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  #news dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #news dt {
+    width: 20%;
+    font-size: 14.4px;
+    color: #24292e;
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+  #news dd {
+    width: 80%;
+    font-size: 14.4px;
+    color: #24292e;
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+  #news .news-first {
+    border-top: 1px solid #c8c8c8;
+  }
+
+  /* Contact */
+
+  #contact {
+    max-width: 960px;
+    padding: 0 4%;
+    margin: 0 auto;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  #contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #contact dt {
+    width: 15%;
+    padding-bottom: 32px;
+  }
+
+  #contact dd {
+    width: 85%;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px;
+  }
+
+  #message {
+    height: 166px;
+    padding: 10px;
+  }
+
+  #name {
+    padding: 10px;
+  }
+
+  #e-mail {
+    padding: 10px;
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .button input {
+    width: 200px;
+    background-color: #24292e;
+    padding: 15px 0;
+    color: #fff;
+  }
+
+  .button:hover {
+    opacity: 0.7;
+  }
+
+  /* フッター */
+
+  footer {
+    width: 100%;
+    background-color: #24292e;
+    margin-top: 130px;
+  }
+
+  footer p {
+    font-size: 8px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* ヘッダー */
+  #header {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 0 4%;
+  }
+
+  .logo {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  header nav {
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  header a {
+    font-size: 12.8px;
+    color: #24292e;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    opacity: 0.7;
+  }
+
+  .insta {
+    width: 20px;
+  }
+
+  /* メイン */
+
+  .pc-pic {
+    display: none;
+  }
+
+  #main-visual img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  /* About */
+
+  #about {
+    padding: 0 4%;
+  }
+
+  #about h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin: 80px auto 40px auto;
+  }
+
+  #about ul {
+    list-style: none;
+    font-size: 14.4px;
+    color: #24292e;
+  }
+
+  #about .name {
+    margin-bottom: 30px;
+  }
+
+  #about p {
+    margin-top: 30px;
+  }
+
+  /* Works */
+
+  #works {
+    padding: 0 4%;
+  }
+
+  #works h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin: 70px 0 43px 0;
+  }
+
+  #works ul {
+    list-style: none;
+    flex-direction: column;
+  }
+
+  #works img {
+    padding-bottom: 23px;
+  }
+
+  #works .last-pic {
+    padding-bottom: 0;
+  }
+
+  /* News */
+
+  #news {
+    max-width: 600px;
+    padding: 0 4%;
+  }
+
+  #news h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin: 90px 0 40px 0;
+  }
+
+  #news dl {
+    width: 100%;
+  }
+
+  #news dt {
+    font-size: 14.4px;
+    color: #24292e;
+    padding: 15px 0 0 15px;
+  }
+
+  #news dt .first {
+    border-top: 1px solid #24292e;
+  }
+
+  #news dd {
+    font-size: 14.4px;
+    color: #24292e;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 0 0 15px 15px;
+  }
+
+  /* Contact */
+
+  #contact {
+    max-width: 600px;
+    padding: 0 4%;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+    color: #24292e;
+    text-align: center;
+    margin: 70px 0 40px 0;
+  }
+
+  #contact dl {
+    width: 100%;
+  }
+
+  #contact dd {
+    height: 449x;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px;
+  }
+
+  #message {
+    height: 166px;
+    padding: 10px;
+  }
+
+  #name {
+    padding: 10px;
+  }
+
+  #e-mail {
+    padding: 10px;
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .button input {
+    width: 200px;
+    background-color: #24292e;
+    padding: 15px 0;
+    color: #fff;
+  }
+
+  .button:hover {
+    opacity: 0.7;
+  }
+
+
+  /* フッター */
+
+  footer {
+    width: 100%;
+    background-color: #24292e;
+    margin-top: 70px;
+  }
+
+  footer p {
+    font-size: 8px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+  }
+}
