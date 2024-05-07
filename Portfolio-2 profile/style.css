@@ -1,0 +1,239 @@
+/* PC,SP共通スタイル */
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+  /* padding: 4px; */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* PCスタイル */
+
+@media (min-width: 601px) {
+
+  /* ナビゲーションメニュー */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 960px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 40px;
+    /* margin-left: 211px; */
+  }
+
+  header nav a {
+    font-style: 14.4px;
+    color: #24292e;
+    margin-left: 30px;
+    text-decoration: none;
+  }
+
+  /* about */
+
+  .main-pic {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  #about {
+    font-size: 32px;
+    color: #383e45;
+    text-align: center;
+    margin: 80px auto 70px auto;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about h3 {
+    font-size: 16px;
+    color: 383e45;
+    margin-bottom: 10px;
+  }
+
+  .about p {
+    font-size: 14.4px;
+    color: #383e45;
+  }
+
+  .profile {
+    margin-left: 30px;
+  }
+
+  /* Bicycle */
+
+  #bicycle {
+    font-size: 32px;
+    color: #383e45;
+    text-align: center;
+    margin: 100px auto 60px auto;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+  }
+
+  .bicycle ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 211px;
+    gap: 17.2px;
+  }
+
+  .bicycle-title {
+    font-size: 16px;
+    color: #383e45;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .bicycle-text {
+    font-size: 14.4px;
+    text-align: center;
+  }
+
+  footer {
+    margin: 110px 0 10px 0;
+    text-align: center;
+  }
+
+  footer small {
+    font-size: 8px;
+    color: #383e45;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 24px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 40px;
+    margin: 10px 0;
+
+  }
+
+  .nav-wrapper {
+    margin: 19px 0;
+  }
+
+
+  header nav a {
+    font-style: 14.4px;
+    color: #24292e;
+    margin-left: 30px;
+    text-decoration: none;
+  }
+
+
+  .main-pic {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  #about {
+    font-size: 32px;
+    color: #383e45;
+    text-align: center;
+    margin: 80px auto 60px auto;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+  }
+
+  .about-pic {
+    text-align: center;
+  }
+
+  .profile {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .profile h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #383e45;
+  }
+
+  .profile p {
+    font-size: 14.4px;
+    color: #383e45;
+    margin: 0 auto;
+  }
+
+  #bicycle {
+    font-size: 32px;
+    color: #383e45;
+    text-align: center;
+    margin: 100px auto 60px auto;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+  }
+
+  .bicycle li {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .bicycle-title {
+    font-size: 16px;
+    color: #383e45;
+    margin: 10px auto;
+  }
+
+  .bicycle-text {
+    font-size: 14.4px;
+    color: #383e45;
+    margin-bottom: 30px;
+  }
+
+  .bicycle img {
+    margin: 0;
+  }
+
+  footer {
+    text-align: center;
+    margin: 110px 0 10px 0;
+  }
+
+  footer small {
+    font-size: 8px;
+    color: #383e45;
+    padding: 10px 0;
+  }
+
+}
