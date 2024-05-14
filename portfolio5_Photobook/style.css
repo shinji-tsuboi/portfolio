@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*-------------------------------
+common
+--------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0 1%;
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: #f4f9ff;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333333;
+  margin: 0 0 20px 0;
+}
+
+p,
+li,
+th,
+td,
+a {
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+}
+
+
+img {
+  width: 100%;
+}
+
+/*-------------------------------
+Header
+--------------------------------*/
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.logo {
+  width: 160px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+/*-------------------------------
+Main Visual
+--------------------------------*/
+
+.main-visual {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+/*-------------------------------
+Index
+--------------------------------*/
+
+#index {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.index {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ol {
+  padding-left: 16px;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+/*-------------------------------
+Detail
+--------------------------------*/
+
+#detail {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contents {
+  display: flex;
+  gap: 60px;
+}
+
+.contents-img {
+  width: 100%;
+}
+
+.contents-item {
+  width: 100%;
+}
+
+table {
+  display: flex;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  padding: 16px 0;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding-left: 26px;
+}
+
+.contents-item p {
+  margin: 25px 0 20px 0;
+}
+
+.contents a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------
+Footer
+--------------------------------*/
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0 15px 0;
+}
+
+
+/*-------------------------------
+SP
+--------------------------------*/
+
+@media (max-width: 600px) {
+
+/*-------------------------------
+Index
+--------------------------------*/
+
+.index {
+  padding:0 30px;
+}
+
+.index h2 {
+  margin-bottom: 10px;
+}
+
+/*-------------------------------
+Detail
+--------------------------------*/
+
+#detail {
+  padding:60px 40px;
+}
+
+.contents {
+  flex-direction: column;
+  gap: 25px;
+}
+
+/*-------------------------------
+Footer
+--------------------------------*/
+
+footer {
+  padding: 85px 40px 15px;
+}
+
+}
