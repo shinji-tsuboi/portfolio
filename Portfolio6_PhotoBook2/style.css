@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/*--------------------------------
+common
+---------------------------------*/
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  color: #333333;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*--------------------------------
+Header
+---------------------------------*/
+
+#header {
+  max-width: 1000px;
+  margin: 60px auto 15px auto;
+  padding: 0 1%;
+}
+
+.site-title {
+  font-size: 0;
+}
+
+.logo {
+  width: 180px;
+  height: 18px;
+}
+
+/*--------------------------------
+Mainvisual
+---------------------------------*/
+
+#mainvisual {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*--------------------------------
+Index
+---------------------------------*/
+
+#index {
+  background-color: #f5f5f5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 60px auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.title-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 60px;
+  border: 1px solid #333333;
+}
+
+.title-list li {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.title-list li:first-child {
+  margin-top: 30px;
+}
+
+/*--------------------------------
+Photo
+---------------------------------*/
+
+#photo ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#photo img {
+  width: 100%;
+}
+
+#photo li {
+  list-style: none;
+  width: calc((100% / 2) - 8px);
+}
+
+ul {
+  gap: 15px 16px;
+}
+
+/*--------------------------------
+Detail
+---------------------------------*/
+
+#detail {
+  background-color: #f5f5f5;
+  padding: 60px;
+  margin-top: 60px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item1 {
+  width: 37%;
+}
+
+.flex-item1 dt {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.flex-item1 dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.flex-item2 {
+  width: 63%;
+  padding: 0 60px 0 40px;
+  border-left: 1px solid #333;
+}
+
+.flex-item2 p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.flex-item2 a {
+  color: #333;
+  font-size: 14px;
+}
+
+/*--------------------------------
+Footer
+---------------------------------*/
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 10px;
+  padding: 75px 0 15px 0;
+}
+
+/*--------------------------------
+SP
+---------------------------------*/
+
+@media (max-width: 800px) {
+
+.main-pic {
+  width: 100%;
+}
+
+.innner {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/*--------------------------------
+Index
+---------------------------------*/
+
+#index {
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.title-list {
+  margin: 0 auto;
+}
+
+/*--------------------------------
+Photo
+---------------------------------*/
+
+#photo ul {
+  flex-direction: column;
+}
+
+#photo li {
+  width: 100%;
+}
+
+/*--------------------------------
+Detail
+---------------------------------*/
+
+#detail {
+  padding: 40px 20px;
+}
+
+.flex-container {
+  flex-direction: column;
+}
+
+.flex-item1 {
+  width: 100%;
+  text-align: left;
+}
+
+.flex-item2 {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-left: none;
+  padding: 0;
+}
+
+}
