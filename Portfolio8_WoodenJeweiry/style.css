@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*---------------------------
+common
+----------------------------*/
+
+body {
+  font-family: "Crimson Text", serif;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+/*---------------------------
+Mainvisual
+----------------------------*/
+
+#mainvisual {
+  margin: 48px 60px 32px;
+}
+
+/*---------------------------
+Header
+----------------------------*/
+
+#header {
+  margin: 0 60px;
+  display: flex;
+}
+
+.logo {
+  width: 110px;
+  margin-right: 50px;
+}
+
+.nav {
+  margin-bottom: 62px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin-right: 30px;
+}
+
+.nav a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+/*---------------------------
+Main
+----------------------------*/
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+#concept,
+#work {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.img {
+  width: 50%;
+}
+
+.content {
+  width: 50%;
+  padding: 0 7%;
+}
+
+.title {
+  font-weight: normal;
+}
+
+.concept,
+.work {
+  margin-bottom: 25px;
+}
+
+/*---------------------------
+Footer
+----------------------------*/
+
+footer {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 16px 20px;
+  margin: 0 auto;
+}
+
+/*---------------------------
+SP
+----------------------------*/
+@media (max-width: 767px) {
+
+/*---------------------------
+Mainvisual
+----------------------------*/
+#mainvisual {
+  margin: 0 0 20px;
+}
+
+/*---------------------------
+Header
+----------------------------*/
+#header {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.nav {
+  margin-bottom: 50px;
+}
+
+/*---------------------------
+Main
+----------------------------*/
+
+#concept {
+  flex-direction: column;
+}
+
+#work {
+  flex-direction: column-reverse;
+}
+
+.img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  padding: 0;
+}
+
+}
