@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  color: #333333;
+}
+
+li {
+  list-style: none;
+  color: #333333;
+}
+
+/*--------------------------------------
+Header
+---------------------------------------*/
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #fff;
+}
+
+.logo {
+  padding: 20px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 145px;
+  height: 30px;
+}
+
+.nav {
+  background-color: #333333;
+  margin-bottom: 44px;
+}
+
+.menu {
+  display: flex;
+  max-width: 1200px;
+  padding: 10px 16px;
+  margin: 0 auto;
+}
+
+.menu li {
+  margin-right: 60px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+}
+
+/*--------------------------------------
+Pick Up
+---------------------------------------*/
+
+#pickup {
+  max-width: 1200px;
+  padding: 155px 16px 0 16px;
+  margin: 0 auto 70px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.pickup-img {
+  margin-bottom: 10px;
+}
+
+.pickup-text {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.read-more {
+  color: #333333;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}
+
+/*--------------------------------------
+Main
+---------------------------------------*/
+
+#container {
+  display: flex;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto 140px auto;
+  justify-content: space-between;
+}
+
+.main {
+  width: 65%;
+}
+
+article {
+  margin-bottom: 80px;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.date {
+  display: flex;
+  font-size: 14px;
+}
+
+.date li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.main-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-size: 16px;
+  color: #333333;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------
+Aside
+---------------------------------------*/
+
+aside {
+  width: 30%;
+}
+
+/* profile */
+
+.profile {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.profile-text {
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+}
+
+/* ranking */
+
+.ranking-title {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ranking-img {
+  width: 100%;
+}
+
+.ranking-text {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+/* Archive */
+.archive-title {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.archive-list li {
+  font-size: 14px;
+  color: #333333;
+  padding: 20px;
+  border-bottom: 1px solid #777777;
+}
+
+.archive-list li:first-child {
+  border-top: 1px solid #777777;
+}
+
+/*--------------------------------------
+Footer
+---------------------------------------*/
+#footer {
+  width: 100%;
+  padding: 50px 16px 10px;
+  background: #f7f7f7;
+}
+
+.content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 60px auto;
+}
+
+.content-title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about {
+  width: 30%;
+}
+
+.about-text {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.about-content a {
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+  padding-left: 12px;
+}
+
+.about-content a::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+.footer-menu {
+  width: 30%;
+}
+
+.footer-menu li {
+  padding: 15px;
+  border-bottom: 1px solid #777777;
+}
+
+.footer-menu li:first-child {
+  border-top: 1px solid #777777;
+}
+
+.footer-menu a {
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.twitter {
+  width: 30%;
+}
+
+.copy {
+  text-align: center;
+}
+
+/*--------------------------------------
+SP
+---------------------------------------*/
+@media (max-width: 767px) {
+
+  #pickup {
+    flex-direction: column;
+  }
+
+  article {
+    margin-bottom: 30px;
+  }
+
+  #container {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .about {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-menu {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .twitter {
+    width: 100%;
+  }
+}
